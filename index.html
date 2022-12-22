@@ -7,8 +7,132 @@
     <link href="/dist/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-<h1 class="bg-blue-400">Hello world</h1>
+<body class="bg-[#EDF2F7]">
+<div class="flex gap-x-4">
+    <div class="flex  items-center justify-center h-[100vh]">
+        
+        <form action="" class="bg-white py-5 flex flex-col items-center rounded">
+            <h1 class="p-4 text-lg ">Momo Transaction Manager</h1>
+            <div class="flex w-[95%]">
+                <div class="flex flex-col items-start p-3">
+                    <label for="" >Sender</label>
+                    <input type="text" placeholder="sender name" name="receiver" class="border border-gray-400 p-2 bg-[#EDF2F7] rounded outline-none w-10/12">
+                </div>
+                <div class="flex flex-col items-start p-3">
+                    <label for="">Phone</label>
+                    <input type="text" placeholder="+250783734191" name="receiver" class="border border-gray-400 p-2 rounded bg-[#EDF2F7] outline-none w-10/12">
+                </div>
+            </div>
+
+            <div class="flex w-[95%]">
+                <div class="flex flex-col items-start gap-x-2 p-3">
+                    <label for="" >Receiver</label>
+                    <input type="text" placeholder="Receiver name" name="receiver" class="border border-gray-400 p-2 rounded bg-[#EDF2F7] outline-none w-10/12">
+                </div>
+                <div class="flex flex-col items-start gap-x-2 p-3">
+                    <label for="">Phone</label>
+                    <input type="text" placeholder="+250783734191" name="receiver" class="border border-gray-400 p-2 rounded bg-[#EDF2F7] outline-none w-10/12">
+                </div>
+            </div>
+            <div class="flex w-[95%] flex-col items-start gap-x-2 p-3">
+                <label for="" class="w-1/4">Date</label>
+                <input type="date" placeholder="sender name" name="receiver" class="border border-gray-400 p-2 rounded bg-[#EDF2F7] outline-none w-[92%]">
+            </div>
+            <div class="flex w-[95%] flex-col items-start gap-x-2 p-3">
+                <label for="" class="w-1/4">Amount</label>
+                <input type="number" placeholder="Ex:12000" name="receiver" class="border border-gray-400 p-2 rounded bg-[#EDF2F7] outline-none w-[92%]">
+            </div>
+        </form>
+
+    </div>
+    <div class="mt-28">
+        <table class="table-fixed">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="py-3 px-6">Sender</th>
+                    <th scope="col" class="py-3 px-6">Phone</th>
+                    <th scope="col" class="py-3 px-6">Receiver</th>
+                    <th scope="col" class="py-3 px-6">Phone</th>
+                    <th scope="col" class="py-3 px-6">Amount</th>
+                    <th scope="col" class="py-3 px-6">Balance</th>
+                    <th scope="col" class="py-3 px-6" rowspan="2" colspan="2"> Operations</th>
+                </tr>
+            </thead>
+            
+           <tbody>
+            <tr class="text-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td scope="col"  class="py-4 px-6">Zainab</td>
+                <td class="py-4 px-6">+25073839839</td>
+                <td class="py-4 px-6">Suleiman</td>
+                <td class="py-4 px-6">+25073839839</td>
+                <td class="py-4 px-6">10000</td>
+                <td class="py-4 px-6">120000</td>
+                <td class="py-4 px-6"><button class="rounded px-3 py-1 bg-blue-600">Update</button></td>
+                <td class="py-4 px-6"><button class="rounded px-3 py-1 bg-blue-600">Delete</button></td>
+            </tr>
+            <tr class="text-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td scope="col"  class="py-4 px-6">Zainab</td>
+                <td class="py-4 px-6">+25073839839</td>
+                <td class="py-4 px-6">Suleiman</td>
+                <td class="py-4 px-6">+25073839839</td>
+                <td class="py-4 px-6">10000</td>
+                <td class="py-4 px-6">120000</td>
+                <td class="py-4 px-6"><button class="rounded px-3 py-1 bg-blue-600">Update</button></td>
+                <td class="py-4 px-6"><button class="rounded px-3 py-1 bg-blue-600">Delete</button></td>
+            </tr>
+            <tr class="text-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td scope="col"  class="py-4 px-6">Zainab</td>
+                <td class="py-4 px-6">+25073839839</td>
+                <td class="py-4 px-6">Suleiman</td>
+                <td class="py-4 px-6">+25073839839</td>
+                <td class="py-4 px-6">10000</td>
+                <td class="py-4 px-6">120000</td>
+                <td class="py-4 px-6"><button class="rounded px-3 py-1 bg-blue-600">Update</button></td>
+                <td class="py-4 px-6"><button class="rounded px-3 py-1 bg-blue-600">Delete</button></td>
+            </tr>
+            <tr class="text-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td scope="col"  class="py-4 px-6">Zainab</td>
+                <td class="py-4 px-6">+25073839839</td>
+                <td class="py-4 px-6">Suleiman</td>
+                <td class="py-4 px-6">+25073839839</td>
+                <td class="py-4 px-6">10000</td>
+                <td class="py-4 px-6">120000</td>
+                <td class="py-4 px-6"><button class="rounded px-3 py-1 bg-blue-600">Update</button></td>
+                <td class="py-4 px-6"><button class="rounded px-3 py-1 bg-blue-600">Delete</button></td>
+            </tr>
+            <tr class="text-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td scope="col"  class="py-4 px-6">Zainab</td>
+                <td class="py-4 px-6">+25073839839</td>
+                <td class="py-4 px-6">Suleiman</td>
+                <td class="py-4 px-6">+25073839839</td>
+                <td class="py-4 px-6">10000</td>
+                <td class="py-4 px-6">120000</td>
+                <td class="py-4 px-6"><button class="rounded px-3 py-1 bg-blue-600">Update</button></td>
+                <td class="py-4 px-6"><button class="rounded px-3 py-1 bg-blue-600">Delete</button></td>
+            </tr>
+            <tr class="text-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td scope="col"  class="py-4 px-6">Zainab</td>
+                <td class="py-4 px-6">+25073839839</td>
+                <td class="py-4 px-6">Suleiman</td>
+                <td class="py-4 px-6">+25073839839</td>
+                <td class="py-4 px-6">10000</td>
+                <td class="py-4 px-6">120000</td>
+                <td class="py-4 px-6"><button class="rounded px-3 py-1 bg-blue-600">Update</button></td>
+                <td class="py-4 px-6"><button class="rounded px-3 py-1 bg-blue-600">Delete</button></td>
+            </tr>
+            
+            
+           </tbody>
+
+        </table>
+
+    </div>
+</div>
+
+
+<form action="">
+
+</form>
 
     
 </body>
